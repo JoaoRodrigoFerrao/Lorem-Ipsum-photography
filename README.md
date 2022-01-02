@@ -1,2 +1,2 @@
 # Lorem-Ipsum-photography
-Projeto para portifólio
+Projeto pessoal para portifólio.
