@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no" /> -->
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 	<!-- Vue -->
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
 	<title></title>
 </head>
 <body>
@@ -29,9 +29,9 @@
 				<ul>
 					<li>
 						<a href="#" class="active" title="Home">Home</a>
-					</li>
+					</li>	
 					<li>
-						<a href="#" title="Contact">Contact</a>
+						<a href="#" title="Contact" class="contact--btn">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -57,49 +57,49 @@
 				</div>
 				<div class="work--images">
 					<div class="image">
-						<img src="assets/images/img2.jpg" />
+						<img src="assets/images/img2.jpg" data-img="2" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img1.jpg" />
+						<img src="assets/images/img1.jpg" data-img="1" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img3.jpg" />
+						<img src="assets/images/img3.jpg" data-img="3" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img1.jpg" />
+						<img src="assets/images/img1.jpg" data-img="1" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img1.jpg" />
+						<img src="assets/images/img1.jpg" data-img="1" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img3.jpg" />
+						<img src="assets/images/img3.jpg" data-img="3" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img2.jpg" />
+						<img src="assets/images/img2.jpg" data-img="2" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
 					</div>
 					<div class="image">
-						<img src="assets/images/img3.jpg" />
+						<img src="assets/images/img3.jpg" data-img="3" />
 						<div class="content--hover">
 							<span>see</span>
 						</div>
@@ -107,6 +107,38 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="slide">
+			<div class="slide--content anime_contact__content">
+				<div class="close--slide">
+					<i data-icon="close_slide"></i>
+				</div>
+				<img src="" alt="img2" class="slide--image" />
+				<div class="slide--controls">
+					<div class="control l">
+						<i data-icon="less"></i>
+					</div>
+					<div class="control m">
+						<i data-icon="more"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="contact--content anime_contact__content">
+				<div class="contact-content--header">
+					<h1>Talk To Me</h1>
+					<i data-icon="close" class="close--contact"></i>
+				</div>
+				<form class="contact-content--form">
+					<input type="text" placeholder="name" />
+					<textarea placeholder="message"></textarea>
+					<input type="submit" value="send" class="form--send" />
+				</form>
+			</div>
+		</section>
+
 	</main>
 	<footer class="footer">
 		<div class="container">
@@ -122,7 +154,7 @@
 								<a href="#" class="active" title="Home">Home</a>
 							</li>
 							<li>
-								<a href="#" title="Contact">Contact</a>
+								<a href="#" title="Contact" class="contact--btn">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -148,6 +180,7 @@
 		</div>
 	</footer>
 
+<script src="js/icons.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
